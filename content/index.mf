@@ -1,0 +1,9 @@
+---
+layout: layout.njk
+title: Main Page
+---
+
+This is an index page.
+
+[Link](./en/first)
+[Klaw](./pl/polska-klawiatura)

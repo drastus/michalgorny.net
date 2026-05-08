@@ -1,0 +1,9 @@
+---
+layout: layout.njk
+title: Example post
+---
+
+{{title}}
+*********
+
+This page is written in English.

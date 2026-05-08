@@ -1,0 +1,23 @@
+{
+  "name": "michalgorny.net",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "start": "npx @11ty/eleventy --serve --quiet",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "markfive": "https://github.com/drastus/markfive.git"
+  },
+  "dependencies": {
+    "@picocss/pico": "^2.1.1",
+    "feather-icons": "^4.29.2"
+  }
+}

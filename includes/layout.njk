@@ -1,0 +1,55 @@
+---
+title: MichałGórny.net
+---
+
+<!DOCTYPE html>
+<html lang="{{ lang | default('en') }}" data-theme="auto">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>{{ title }}</title>
+		<link rel="stylesheet" href="/styles/markfive.css">
+		<link rel="stylesheet" href="/styles/pico.indigo.min.css">
+		{% if css %}
+			{% for sheet in css %}
+				<link rel="stylesheet" href="{{ sheet }}">
+			{% endfor %}
+		{% endif %}
+		<link rel="stylesheet" href="/styles/index.css">
+	</head>
+	<body>
+		<nav class="top-bar" id="topBar">
+			<div class="top-bar-content">
+				<a href="/" class="top-bar-title">MichałGórny.net</a>
+				<div class="top-bar-nav">
+					<a
+						href="mailto:zrchos@gmail.com"
+						aria-label="{% if lang == 'pl' %}Kontakt{% else %}Contact{% endif %}"
+						title="{% if lang == 'pl' %}Kontakt{% else %}Contact{% endif %}"
+					>
+						<i data-feather="mail"></i>
+					</a>
+					<a
+						href="https://github.com/"
+						aria-label="{% if lang == 'pl' %}Kod źródłowy{% else %}Source code{% endif %}"
+						title="{% if lang == 'pl' %}Kod źródłowy{% else %}Source code{% endif %}"
+					>
+						<i data-feather="github"></i>
+					</a>
+					<a
+						href="#"
+						class="theme-toggle"
+						id="themeToggle"
+						aria-label="{% if lang == 'pl' %}Przełącz motyw{% else %}Toggle theme{% endif %}"
+						title="{% if lang == 'pl' %}Tryb jasny{% else %}Light mode{% endif %}"
+					>
+						<i data-feather="sun" class="theme-icon"></i>
+					</a>
+				</div>
+			</div>
+		</nav>
+		{{ content | safe }}
+		<script src="/js/feather.min.js"></script>
+		<script src="/scripts/top-bar.js"></script>
+	</body>
+</html>
