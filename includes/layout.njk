@@ -3,13 +3,13 @@ title: MichałGórny.net
 ---
 
 <!DOCTYPE html>
-<html lang="{{ lang | default('en') }}" data-theme="auto">
+<html lang="{{ lang | default('en') }}">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title }}</title>
-		<link rel="stylesheet" href="/styles/markfive.css">
 		<link rel="stylesheet" href="/styles/pico.indigo.min.css">
+		<link rel="stylesheet" href="/styles/markfive.css">
 		{% if css %}
 			{% for sheet in css %}
 				<link rel="stylesheet" href="{{ sheet }}">
@@ -48,8 +48,13 @@ title: MichałGórny.net
 				</div>
 			</div>
 		</nav>
-		{{ content | safe }}
+		<div class="page-content">{{ content | safe }}</div>
 		<script src="/js/feather.min.js"></script>
-		<script src="/scripts/top-bar.js"></script>
+		<script src="/scripts/top-bar.js" type="module"></script>
+		{% if scripts %}
+			{% for script in scripts %}
+				<script src="{{ script }}" type="module"></script>
+			{% endfor %}
+		{% endif %}
 	</body>
 </html>

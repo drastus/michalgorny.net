@@ -26,7 +26,7 @@ export default function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({'content/styles': 'styles'});
 	eleventyConfig.addPassthroughCopy({'content/scripts': 'scripts'});
 	eleventyConfig.addPassthroughCopy({'node_modules/markfive/lib/markfive.css': 'styles/markfive.css'});
-	eleventyConfig.addPassthroughCopy({'node_modules/@picocss/pico/css/pico.indigo.min.css': 'styles/pico.indigo.min.css'});
+	eleventyConfig.addPassthroughCopy({'node_modules/@picocss/pico/css/pico.indigo.min.css': 'styles/pico.min.css'});
 	eleventyConfig.addPassthroughCopy({'node_modules/feather-icons/dist/feather.min.js': 'js/feather.min.js'});
 };
 

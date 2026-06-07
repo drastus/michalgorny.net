@@ -1,3 +1,8 @@
+html,
+body {
+	overflow-x: hidden;
+}
+
 body {
 	padding-top: 120px;
 	padding-left: 1rem;
@@ -24,7 +29,7 @@ body {
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
+	width: 100vw;
 	background: var(--pico-background-color);
 	border-bottom: 1px solid var(--pico-muted-border-color);
 	z-index: 1000;
@@ -99,4 +104,13 @@ body {
 .theme-toggle:hover {
 	background-color: var(--pico-primary-hover);
 	color: var(--pico-primary-inverse);
+}
+
+.page-content {
+	overflow-x: auto;
+}
+
+kbd.mf-keys, kbd.mf-key {
+	background: none;
+	color: var(--pico-color);
 }

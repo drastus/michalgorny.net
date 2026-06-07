@@ -3,6 +3,7 @@ layout: layout.njk
 lang: pl
 title: Polska klawiatura pod Linuxem
 css: ['/styles/keyboard.css']
+scripts: ['/scripts/keyboard.js']
 ---
 
 {{title}}
@@ -11,34 +12,39 @@ css: ['/styles/keyboard.css']
 Wstęp.
 
 ??{#keyboard}
-	??{.row}
-		??{.key}
-			`
-		??{.key}
-			1
-		??{.key}
-			2
-		??{.key}
-			3
-		??{.key}
-			4
-		??{.key}
-			5
-		??{.key}
-			6
-		??{.key}
-			7
-		??{.key}
-			8
-		??{.key}
-			9
-		??{.key}
-			0
-		??{.key}
-			\-
-		??{.key}
-			\=
 
+??{#key-desc}
+	??{#key-desc-bl}
+		??{.key-desc-char}
+
+		??{.key-desc-info}
+			??{.key-desc-name}
+
+			??{.key-desc-details}
+
+	??{#key-desc-tl}
+		??{.key-desc-char}
+
+		??{.key-desc-info}
+			??{.key-desc-name}
+
+			??{.key-desc-details}
+
+	??{#key-desc-br}
+		??{.key-desc-char}
+
+		??{.key-desc-info}
+			??{.key-desc-name}
+
+			??{.key-desc-details}
+
+	??{#key-desc-tr}
+		??{.key-desc-char}
+
+		??{.key-desc-info}
+			??{.key-desc-name}
+
+			??{.key-desc-details}
 
 Dostępne znaki
 ==============
@@ -48,116 +54,126 @@ Z klawiszem [[AltGr]].
 Martwe klawisze
 ---------------
 
-- ◌̧  (martwa cedylla): [[AltGr]+[=]]
-- ◌̨  (martwy ogonek): [[AltGr]+[Shift]+[=]]
-- ◌̈  (martwa diereza): [[AltGr]+[\[]]
-- ◌̈  (martwe kółko u góry): [[AltGr]+[Shift]+[\[]]
-- ◌̃  (martwa tylda): [[AltGr]+[\]]]
-- ◌̄  (martwy makron): [[AltGr]+[Shift]+[\]]]
-- ◌̀  (martwy grawis): [[AltGr]+[\\]]
-- ◌̆  (martwy brewis): [[AltGr]+[Shift]+[\\]]
-- ◌̋  (martwy akut): [[AltGr]+[;]]
-- ◌̋  (martwy podwójny akut): [[AltGr]+[Shift]+[;]]
-- ◌̂  (martwy cyrkumfleks): [[AltGr]+[']]
-- ◌̌  (martwy haczek): [[AltGr]+[Shift]+[']]
-- ◌̵ (martwa kreska): [[AltGr]+[Shift]+[K]]
-- ◌̣  (martwa kropka u dołu): [[AltGr]+[/]]
-- ◌̇  (martwa kropka u góry): [[AltGr]+[Shift]+[/]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| ◌̧ | martwa cedylla | [[AltGr]+[=]]
+| ◌̨ | martwy ogonek | [[AltGr]+[Shift]+[=]]
+| ◌̈ | martwa diereza | [[AltGr]+[\[]]
+| ◌̈ | martwe kółko u góry | [[AltGr]+[Shift]+[\[]]
+| ◌̃ | martwa tylda | [[AltGr]+[\]]]
+| ◌̄ | martwy makron | [[AltGr]+[Shift]+[\]]]
+| ◌̀ | martwy grawis | [[AltGr]+[\\]]
+| ◌̆ | martwy brewis | [[AltGr]+[Shift]+[\\]]
+| ◌̋ | martwy akut | [[AltGr]+[;]]
+| ◌̋ | martwy podwójny akut | [[AltGr]+[Shift]+[;]]
+| ◌̂ | martwy cyrkumfleks | [[AltGr]+[']]
+| ◌̌ | martwy haczek | [[AltGr]+[Shift]+[']]
+| ◌̵ | martwa kreska | [[AltGr]+[Shift]+[K]]
+| ◌̣ | martwa kropka u dołu | [[AltGr]+[/]]
+| ◌̇ | martwa kropka u góry | [[AltGr]+[Shift]+[/]]
 
 Litery specjalne
 ----------------
 
-- ß (eszet): [[AltGr]+[T]]
-- œ (oe): [[AltGr]+[W]]
-- Œ (OE): [[AltGr]+[Shift]+[W]]
-- þ (th): [[AltGr]+[P]]
-- Þ (TH): [[AltGr]+[Shift]+[P]]
-- ð (eth): [[AltGr]+[D]]
-- Ð (Eth): [[AltGr]+[Shift]+[D]]
-- æ (ae): [[AltGr]+[F]]
-- Æ (AE): [[AltGr]+[Shift]+[F]]
-- ŋ (eng): [[AltGr]+[G]]
-- Ŋ (Eng): [[AltGr]+[Shift]+[G]]
-- ə (szwa): [[AltGr]+[J]]
-- Ə (Szwa): [[AltGr]+[Shift]+[J]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| ß | eszet | [[AltGr]+[T]]
+| œ | oe | [[AltGr]+[W]]
+| Œ | OE | [[AltGr]+[Shift]+[W]]
+| þ | th | [[AltGr]+[P]]
+| Þ | TH | [[AltGr]+[Shift]+[P]]
+| ð | eth | [[AltGr]+[D]]
+| Ð | Eth | [[AltGr]+[Shift]+[D]]
+| æ | ae | [[AltGr]+[F]]
+| Æ | AE | [[AltGr]+[Shift]+[F]]
+| ŋ | eng | [[AltGr]+[G]]
+| Ŋ | Eng | [[AltGr]+[Shift]+[G]]
+| ə | szwa | [[AltGr]+[J]]
+| Ə | Szwa | [[AltGr]+[Shift]+[J]]
 
 Znaki interpunkcyjne
 --------------------
 
-- – (pauza): [[AltGr]+[-]]
-- — (długa pauza): [[AltGr]+[Shift]+[-]]
-- … (wielokropek): [[AltGr]+[K]]
-- « (lewy cudzysłów): [[AltGr]+[9]]
-- » (prawy cudzysłów): [[AltGr]+[0]]
-- ‚ (pojedynczy lewy cudzysłów): [[AltGr]+[V]]
-- ' (pojedynczy prawy cudzysłów): [[AltGr]+[Shift]+[V]]
-- ' (pojedynczy prawy cudzysłów): [[AltGr]+[B]]
-- '' (podwójny prawy cudzysłów): [[AltGr]+[Shift]+[B]]
-- ¡ (wykrzyknik odwrócony): [[AltGr]+[Shift]+[1]]
-- ¿ (znak zapytania odwrócony): [[AltGr]+[Shift]+[2]]
--   (twarda spacja): [[AltGr]+[spacja]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| – | półpauza | [[AltGr]+[-]]
+| — | pauza | [[AltGr]+[Shift]+[-]]
+| … | wielokropek | [[AltGr]+[K]]
+| « | lewy cudzysłów kątowy | [[AltGr]+[9]]
+| » | prawy cudzysłów kątowy | [[AltGr]+[0]]
+| ‚ | pojedynczy lewy cudzysłów | [[AltGr]+[V]]
+| ' | pojedynczy prawy cudzysłów | [[AltGr]+[Shift]+[V]]
+| ' | pojedynczy prawy cudzysłów | [[AltGr]+[B]]
+| '' | podwójny prawy cudzysłów | [[AltGr]+[Shift]+[B]]
+| ¡ | wykrzyknik odwrócony | [[AltGr]+[Shift]+[1]]
+| ¿ | znak zapytania odwrócony | [[AltGr]+[Shift]+[2]]
+|   | twarda spacja | [[AltGr]+[spacja]]
 
 Symbole matematyczne
 --------------------
 
-- ≠ (różne od): [[AltGr]+[1]]
-- ≈ (w przybliżeniu): [[AltGr]+[Shift]+[7]]
-- · (kropka środkowa): [[AltGr]+[Shift]+[8]]
-- ± (plus minus): [[AltGr]+[9]]
-- × (mnożenie): [[AltGr]+[,]]
-- ÷ (dzielenie): [[AltGr]+[.]]
-- ≤ (mniejsze lub równe): [[AltGr]+[Shift]+[,]]
-- ≥ (większe lub równe): [[AltGr]+[Shift]+[.]]
-- ∞ (nieskończoność): [[AltGr]+[M]]
-- π (pi): [[AltGr]+[Q]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| ≠ | różne od | [[AltGr]+[1]]
+| ≈ | w przybliżeniu | [[AltGr]+[Shift]+[7]]
+| · | kropka środkowa | [[AltGr]+[Shift]+[8]]
+| ± | plus minus | [[AltGr]+[9]]
+| × | mnożenie | [[AltGr]+[,]]
+| ÷ | dzielenie | [[AltGr]+[.]]
+| ≤ | mniejsze lub równe | [[AltGr]+[Shift]+[,]]
+| ≥ | większe lub równe | [[AltGr]+[Shift]+[.]]
+| ∞ | nieskończoność | [[AltGr]+[M]]
+| π | pi | [[AltGr]+[Q]]
 
 Symbole logiczne
 ----------------
 
-- ¬ (negacja): [[AltGr]+[`]]
-- ∨ (alternatywa): [[AltGr]+[Shift]+[`]]
-- ∧ (koniunkcja): [[AltGr]+[Shift]+[6]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| ¬ | negacja | [[AltGr]+[`]] | oznaczana też przez [[~]]
+| ∨ | alternatywa | [[AltGr]+[Shift]+[`]]
+| ∧ | koniunkcja | [[AltGr]+[Shift]+[6]]
 
 Strzałki
 --------
 
-- ← (strzałka w lewo): [[AltGr]+[Y]]
-- → (strzałka w prawo): [[AltGr]+[I]]
-- ↑ (strzałka w górę): [[AltGr]+[Shift]+[U]]
-- ↓ (strzałka w dół): [[AltGr]+[U]]
-- ↔ (strzałka obustronna): [[AltGr]+[Shift]+[I]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| ← | strzałka w lewo | [[AltGr]+[Y]]
+| → | strzałka w prawo | [[AltGr]+[I]]
+| ↑ | strzałka w górę | [[AltGr]+[Shift]+[U]]
+| ↓ | strzałka w dół | [[AltGr]+[U]]
+| ↔ | strzałka w lewo i prawo | [[AltGr]+[Shift]+[I]]
 
 Ułamki
 ------
 
-- ¼ (ćwierć): [[AltGr]+[4]]
-- ½ (pół): [[AltGr]+[6]]
-- ¾ (trzy czwarte): [[AltGr]+[8]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| ¼ | jedna czwarta | [[AltGr]+[4]]
+| ½ | jedna druga | [[AltGr]+[6]]
+| ¾ | trzy czwarte | [[AltGr]+[8]]
 
 Jednostki
 ---------
 
-- ² (do kwadratu): [[AltGr]+[2]]
-- ³ (do sześcianu): [[AltGr]+[3]]
-- ° (stopień): [[AltGr]+[Shift]+[0]]
-- μ (mikro): [[AltGr]+[Shift]+[M]]
-- Ω (Omega): [[AltGr]+[Shift]+[Q]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| ² | do kwadratu | [[AltGr]+[2]]
+| ³ | do sześcianu | [[AltGr]+[3]]
+| ° | stopień | [[AltGr]+[Shift]+[0]]
+| μ | mikro | [[AltGr]+[Shift]+[M]] | przedrostek układu SI
+| Ω | Omega | [[AltGr]+[Shift]+[Q]] | om, jednostka oporu elektrycznego
 
 
 Symbole walut
 -------------
 
-- € (euro): [[AltGr]+[5]]
-- ¢ (cent): [[AltGr]+[4]]
-- £ (funt): [[AltGr]+[Shift]+[3]]
-- ¥ (jen, juan): [[AltGr]+[Shift]+[Y]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| € | euro | [[AltGr]+[5]]
+| ¢ | cent | [[AltGr]+[4]]
+| £ | funt | [[AltGr]+[Shift]+[3]]
+| ¥ | jen | [[AltGr]+[Shift]+[Y]] | używany też jako symbol juana
 
 Inne symbole
 ------------
 
-- § (paragraf): [[AltGr]+[7]]
-- © (prawo autorskie): [[AltGr]+[R]]
-- ® (zarejestrowany): [[AltGr]+[Shift]+[R]]
-- ™ (znak towarowy): [[AltGr]+[Shift]+[T]]
-- ‰ (promil): [[AltGr]+[Shift]+[5]]
-- • (punktor): [[AltGr]+[Shift]+[H]]
+! Znak ! Nazwa ! Sekwencja ! Uwagi
+| § | paragraf | [[AltGr]+[7]]
+| © | prawo autorskie | [[AltGr]+[R]]
+| ® | zarejestrowany | [[AltGr]+[Shift]+[R]]
+| ™ | znak towarowy | [[AltGr]+[Shift]+[T]]
+| ‰ | promil | [[AltGr]+[Shift]+[5]]
+| • | punktor | [[AltGr]+[Shift]+[H]]

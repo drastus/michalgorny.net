@@ -14,7 +14,7 @@
   "type": "module",
   "devDependencies": {
     "@11ty/eleventy": "^3.1.2",
-    "markfive": "https://github.com/drastus/markfive.git"
+    "markfive": "github:drastus/markfive"
   },
   "dependencies": {
     "@picocss/pico": "^2.1.1",

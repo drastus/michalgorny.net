@@ -13,7 +13,7 @@ const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 const savedTheme = localStorage.getItem('theme');
 const currentTheme = savedTheme || 'auto';
 
-html.setAttribute('data-theme', currentTheme);
+applyTheme(currentTheme);
 updateThemeIcon(currentTheme);
 
 themeToggle.addEventListener('click', (e) => {
@@ -29,10 +29,18 @@ themeToggle.addEventListener('click', (e) => {
 		newTheme = 'light';
 	}
 
-	html.setAttribute('data-theme', newTheme);
+	applyTheme(newTheme);
 	localStorage.setItem('theme', newTheme);
 	updateThemeIcon(newTheme);
 });
+
+function applyTheme(theme) {
+	if (theme === 'auto') {
+		html.removeAttribute('data-theme');
+	} else {
+		html.setAttribute('data-theme', theme);
+	}
+}
 
 function updateThemeIcon(theme) {
 	let iconType;
