@@ -3,7 +3,6 @@ layout: layout.njk
 title: Main Page
 ---
 
-This is an index page.
+[Compose Generator](./compose-generator)
 
-[Link](./en/first)
-[Klaw](./pl/polska-klawiatura)
+[Polska klawiatura](./pl/polska-klawiatura)

@@ -17,7 +17,7 @@ export default function(eleventyConfig) {
 	eleventyConfig.addExtension('mf', {
 		compile: async function (inputContent) {
 			return async (data) => {
-				const markfive = new Markfive(inputContent, {}, data);
+				const markfive = new Markfive(inputContent, {'heading-shift': 1}, data);
 				return markfive.run();
 			};
 		},
@@ -28,6 +28,7 @@ export default function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({'node_modules/markfive/lib/markfive.css': 'styles/markfive.css'});
 	eleventyConfig.addPassthroughCopy({'node_modules/@picocss/pico/css/pico.indigo.min.css': 'styles/pico.min.css'});
 	eleventyConfig.addPassthroughCopy({'node_modules/feather-icons/dist/feather.min.js': 'js/feather.min.js'});
+	eleventyConfig.addPassthroughCopy({'compose-generator/dist': 'compose-app'});
 };
 
 export const config = {

@@ -5,21 +5,24 @@ body {
 
 body {
 	padding-top: 120px;
-	padding-left: 1rem;
-	padding-right: 1rem;
+}
+
+.page-content-inner {
 	max-width: 1200px;
 	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 @media (min-width: 768px) {
-	body {
+	.page-content-inner {
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
 }
 
 @media (min-width: 1024px) {
-	body {
+	.page-content-inner {
 		padding-left: 3rem;
 		padding-right: 3rem;
 	}
@@ -64,6 +67,11 @@ body {
 		padding-left: 3rem;
 		padding-right: 3rem;
 	}
+}
+
+.top-bar h1 {
+	margin: 0;
+	font: inherit;
 }
 
 .top-bar-title {

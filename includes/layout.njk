@@ -8,6 +8,7 @@ title: MichałGórny.net
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>{{ title }}</title>
+		<script>(function(){var t=localStorage.getItem('theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);})();</script>
 		<link rel="stylesheet" href="/styles/pico.indigo.min.css">
 		<link rel="stylesheet" href="/styles/markfive.css">
 		{% if css %}
@@ -20,7 +21,7 @@ title: MichałGórny.net
 	<body>
 		<nav class="top-bar" id="topBar">
 			<div class="top-bar-content">
-				<a href="/" class="top-bar-title">MichałGórny.net</a>
+				<h1><a href="/" class="top-bar-title">MichałGórny.net</a></h1>
 				<div class="top-bar-nav">
 					<a
 						href="mailto:zrchos@gmail.com"
@@ -30,7 +31,7 @@ title: MichałGórny.net
 						<i data-feather="mail"></i>
 					</a>
 					<a
-						href="https://github.com/"
+						href="{{ sourceUrl | default('https://github.com/drastus/michalgorny.net') }}"
 						aria-label="{% if lang == 'pl' %}Kod źródłowy{% else %}Source code{% endif %}"
 						title="{% if lang == 'pl' %}Kod źródłowy{% else %}Source code{% endif %}"
 					>
@@ -48,8 +49,9 @@ title: MichałGórny.net
 				</div>
 			</div>
 		</nav>
-		<div class="page-content">{{ content | safe }}</div>
+		<div class="page-content"><div class="page-content-inner">{{ content | safe }}</div><div id="page-footer-root"></div></div>
 		<script src="/js/feather.min.js"></script>
+		<script>feather.replace();</script>
 		<script src="/scripts/top-bar.js" type="module"></script>
 		{% if scripts %}
 			{% for script in scripts %}

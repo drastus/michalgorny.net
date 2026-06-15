@@ -1,0 +1,3 @@
+[submodule "compose-generator"]
+	path = compose-generator
+	url = git@github.com:drastus/compose-generator.git

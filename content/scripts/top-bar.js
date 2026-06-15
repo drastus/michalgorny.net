@@ -1,6 +1,3 @@
-// Initialize Feather Icons
-feather.replace();
-
 // Theme toggle functionality
 const themeToggle = document.getElementById('themeToggle');
 const html = document.documentElement;
