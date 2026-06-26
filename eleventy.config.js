@@ -23,6 +23,7 @@ export default function(eleventyConfig) {
 		},
 	});
 
+	eleventyConfig.addPassthroughCopy({'content/CNAME': 'CNAME'});
 	eleventyConfig.addPassthroughCopy({'content/styles': 'styles'});
 	eleventyConfig.addPassthroughCopy({'content/scripts': 'scripts'});
 	eleventyConfig.addPassthroughCopy({'node_modules/markfive/lib/markfive.css': 'styles/markfive.css'});
