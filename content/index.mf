@@ -5,4 +5,4 @@ title: Main Page
 
 [Compose Generator](./compose-generator)
 
-[Polska klawiatura](./pl/polska-klawiatura)
+[Polska klawiatura w systemie Linux](./pl/polska-klawiatura)

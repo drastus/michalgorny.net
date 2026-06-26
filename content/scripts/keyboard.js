@@ -1,4 +1,4 @@
-import {geometry, layout, plNames, unicodeNames} from './keyboard-data.js';
+import {geometry, layout, plNames, symbolNames, unicodeNames} from './keyboard-data.js';
 
 function formatHex(num) {
     return num.toString(16).toUpperCase().padStart(4, '0');
@@ -9,7 +9,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const keyDescTL = document.getElementById('key-desc-tl');
     const keyDescBR = document.getElementById('key-desc-br');
     const keyDescTR = document.getElementById('key-desc-tr');
+    const keyDescElement = document.getElementById('key-desc');
     const keyboardElement = document.getElementById('keyboard');
+
+    const placeholder = document.createElement('div');
+    placeholder.id = 'key-desc-placeholder';
+    placeholder.textContent = 'Najedź kursorem na klawisz, aby zobaczyć szczegóły.';
+    keyDescElement.appendChild(placeholder);
     geometry.forEach((row) => {
         const rowElement = keyboardElement.appendChild(document.createElement('div'));
         rowElement.classList.add('kb-row');
@@ -42,21 +48,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 keyTRElement.textContent = String.fromCharCode(keys[3]);
 
                 keyElement.addEventListener('mouseover', () => {
+                    placeholder.classList.add('hidden');
                     keyDescBL.querySelector('.key-desc-char').textContent = String.fromCharCode(keys[0]);
 					keyDescBL.querySelector('.key-desc-name').textContent = plNames[key]?.[0] ?? '';
-                    keyDescBL.querySelector('.key-desc-details').textContent = formatHex(keys[0]) + ' ' + unicodeNames[keys[0]];
+                    keyDescBL.querySelector('.key-desc-details').textContent = unicodeNames[keys[0]] ? formatHex(keys[0]) + ' ' + unicodeNames[keys[0]] : symbolNames[key][0];
 
                     keyDescTL.querySelector('.key-desc-char').textContent = String.fromCharCode(keys[1]);
 					keyDescTL.querySelector('.key-desc-name').textContent = plNames[key]?.[1] ?? '';
-                    keyDescTL.querySelector('.key-desc-details').textContent = formatHex(keys[1]) + ' ' + unicodeNames[keys[1]];
+                    keyDescTL.querySelector('.key-desc-details').textContent = unicodeNames[keys[1]] ? formatHex(keys[1]) + ' ' + unicodeNames[keys[1]] : symbolNames[key][1];
 
                     keyDescBR.querySelector('.key-desc-char').textContent = String.fromCharCode(keys[2]);
 					keyDescBR.querySelector('.key-desc-name').textContent = plNames[key]?.[2] ?? '';
-                    keyDescBR.querySelector('.key-desc-details').textContent = formatHex(keys[2]) + ' ' + unicodeNames[keys[2]];
+                    keyDescBR.querySelector('.key-desc-details').textContent = unicodeNames[keys[2]] ? formatHex(keys[2]) + ' ' + unicodeNames[keys[2]] : symbolNames[key][2];
 
                     keyDescTR.querySelector('.key-desc-char').textContent = String.fromCharCode(keys[3]);
 					keyDescTR.querySelector('.key-desc-name').textContent = plNames[key]?.[3] ?? '';
-                    keyDescTR.querySelector('.key-desc-details').textContent = formatHex(keys[3]) + ' ' + unicodeNames[keys[3]];
+                    keyDescTR.querySelector('.key-desc-details').textContent = unicodeNames[keys[3]] ? formatHex(keys[3]) + ' ' + unicodeNames[keys[3]] : symbolNames[key][3];
                 });
             }
         });
@@ -73,7 +80,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const scale = Math.min(1, wrapper.clientWidth / naturalWidth);
         if (scale < 1) {
             keyboardElement.style.transform = `scale(${scale})`;
-            keyboardElement.style.transformOrigin = 'top left';
+            keyboardElement.style.transformOrigin = 'top center';
             wrapper.style.height = `${naturalHeight * scale}px`;
         } else {
             keyboardElement.style.transform = '';

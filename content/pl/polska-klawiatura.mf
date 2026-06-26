@@ -1,7 +1,7 @@
 ---
 layout: layout.njk
 lang: pl
-title: Polska klawiatura pod Linuxem
+title: Polska klawiatura w systemie Linux
 css: ['/styles/keyboard.css']
 scripts: ['/scripts/keyboard.js']
 ---
@@ -9,7 +9,7 @@ scripts: ['/scripts/keyboard.js']
 {{title}}
 *********
 
-Wstęp.
+Strona ta dokumentuje domyślny polski układ klawiatury w XKB (/X Keyboard Extension/), używany w środowiskach graficznych pod Linuxem (oraz innych systemach uniksopodobnych). Jest to układ typu QWERTY, w którym polskie litery (ą, ć, ę, ł, ń, ó, ś, ź, ż) wpisuje się, przytrzymując klawisz [[AltGr]] i naciskając odpowiedni klawisz łaciński. Poza literami układu podstawowego, klawisz [[AltGr]] daje dostęp do bogatego zestawu dodatkowych znaków: symboli matematycznych i logicznych, znaków interpunkcyjnych typograficznych, walut, ułamków i strzałek. Część kombinacji z [[AltGr]] uruchamia ~martwe klawisze~, umożliwiające łatwe wpisywanie liter ze znakami diakrytycznymi.
 
 ??{#keyboard}
 
@@ -49,45 +49,45 @@ Wstęp.
 Dostępne znaki
 ==============
 
-Z klawiszem [[AltGr]].
-
 Martwe klawisze
 ---------------
 
-! Znak ! Nazwa ! Sekwencja ! Uwagi
-| ◌̧ | martwa cedylla | [[AltGr]+[=]]
-| ◌̨ | martwy ogonek | [[AltGr]+[Shift]+[=]]
-| ◌̈ | martwa diereza | [[AltGr]+[\[]]
-| ◌̈ | martwe kółko u góry | [[AltGr]+[Shift]+[\[]]
-| ◌̃ | martwa tylda | [[AltGr]+[\]]]
-| ◌̄ | martwy makron | [[AltGr]+[Shift]+[\]]]
-| ◌̀ | martwy grawis | [[AltGr]+[\\]]
-| ◌̆ | martwy brewis | [[AltGr]+[Shift]+[\\]]
-| ◌̋ | martwy akut | [[AltGr]+[;]]
-| ◌̋ | martwy podwójny akut | [[AltGr]+[Shift]+[;]]
-| ◌̂ | martwy cyrkumfleks | [[AltGr]+[']]
-| ◌̌ | martwy haczek | [[AltGr]+[Shift]+[']]
-| ◌̵ | martwa kreska | [[AltGr]+[Shift]+[K]]
-| ◌̣ | martwa kropka u dołu | [[AltGr]+[/]]
-| ◌̇ | martwa kropka u góry | [[AltGr]+[Shift]+[/]]
+Po naciśnięciu martwego klawisza kolejny klawisz tworzy znak z odpowiednim diakrytykiem. Na przykład wciśnięcie [[AltGr]+[\\]] (martwy grawis) i następnie [[A]] daje /à/.
+
+! Znak ! Nazwa ! Sekwencja ! Generowane litery
+| ◌̧ | martwa cedylla | [[AltGr]+[=]] | Çç Ḑḑ Ȩȩ Ģģ Ḩḩ Ķķ Ļļ Ņņ Ŗŗ Şş Ţţ
+| ◌̨ | martwy ogonek | [[AltGr]+[Shift]+[=]] | Ąą Ęę Įį Ǫǫ Ųų
+| ◌̈ | martwa diereza | [[AltGr]+[\[]] | Ää Ëë Ḧḧ Ïï Öö Üü Ẅẅ Ẍẍ Ÿÿ
+| ◌̈ | martwe kółko u góry | [[AltGr]+[Shift]+[\[]] | Åå Ůů ẘ ẙ
+| ◌̃ | martwa tylda | [[AltGr]+[\]]] | Ãã Ẽẽ Ĩĩ Ññ Õõ Ũũ Ṽṽ Ỹỹ
+| ◌̄ | martwy makron | [[AltGr]+[Shift]+[\]]] | Āā Ǣǣ Ēē Ḡḡ Īī Ōō Ūū Ǖǖ[*][Używana w /hànyǔ pīnyīn/, transkrypcji języka chińskiego, litera Ü/ü ze znacznikiem tonalnym, wyjątkowo dostępna przy pomocy klawisza [[V]].]{#pinyin} Ȳȳ
+| ◌̀ | martwy grawis | [[AltGr]+[\\]] | Àà Èè Ìì Ǹǹ Òò Ùù Ǜǜ Ẁẁ
+| ◌̆ | martwy brewis | [[AltGr]+[Shift]+[\\]] | Āā Ēē Ḡḡ Īī Ōō Ūū Ǖǖ[*](#pinyin) Ȳȳ
+| ◌̋ | martwy akut | [[AltGr]+[;]] | Áá Ǽǽ Ćć Éé Ǵǵ Íí Ḱḱ Ĺĺ Ḿḿ Ńń Óó Ṕṕ Ŕŕ Śś Úú Ẃẃ Ýý Źź
+| ◌̋ | martwy podwójny akut | [[AltGr]+[Shift]+[;]] | Őő Űű
+| ◌̂ | martwy cyrkumfleks | [[AltGr]+[']] | Ââ Ĉĉ Êê Ĝĝ Ĥĥ Îî Ĵĵ Ôô Ŝŝ Ûû Ŵŵ Ŷŷ Ẑẑ
+| ◌̌ | martwy haczek | [[AltGr]+[Shift]+[']] | Ǎǎ Čč Ďď Ěě Ǧǧ Ȟȟ Ǐǐ ǰ Ǩǩ Ľľ Ňň Ǒǒ Řř Šš Ťť Ǔǔ Žž
+| ◌̵ | martwa kreska | [[AltGr]+[Shift]+[K]] | Ⱥⱥ Ƀƀ Ȼȼ Đđ Ɇɇ Ǥǥ Ħħ Ɨɨ Ɉɉ Łł Øø Ᵽᵽ Ɍɍ Ŧŧ Ʉʉ Ɏɏ Ƶƶ
+| ◌̣ | martwa kropka u dołu | [[AltGr]+[/]] | Ạạ Ḅḅ Ḍḍ Ẹẹ Ḥḥ Ịị Ḳḳ Ḷḷ Ṃṃ Ṇṇ Ọọ Ṛṛ Ṣṣ Ṭṭ Ụụ Ṿṿ Ỵỵ Ẓẓ
+| ◌̇ | martwa kropka u góry | [[AltGr]+[Shift]+[/]] | Ȧȧ Ḃḃ Ċċ Ḋḋ Ėė Ḟḟ Ġġ Ḣḣ İı Ṁṁ Ṅṅ Ȯȯ Ṗṗ Ṙṙ Ṡṡ Ṫṫ Ẋẋ Ẏẏ Żż
 
 Litery specjalne
 ----------------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| ß | eszet | [[AltGr]+[T]]
-| œ | oe | [[AltGr]+[W]]
-| Œ | OE | [[AltGr]+[Shift]+[W]]
-| þ | th | [[AltGr]+[P]]
-| Þ | TH | [[AltGr]+[Shift]+[P]]
-| ð | eth | [[AltGr]+[D]]
-| Ð | Eth | [[AltGr]+[Shift]+[D]]
-| æ | ae | [[AltGr]+[F]]
-| Æ | AE | [[AltGr]+[Shift]+[F]]
-| ŋ | eng | [[AltGr]+[G]]
-| Ŋ | Eng | [[AltGr]+[Shift]+[G]]
-| ə | szwa | [[AltGr]+[J]]
-| Ə | Szwa | [[AltGr]+[Shift]+[J]]
+| ß | eszet | [[AltGr]+[T]] | język niemiecki
+| œ | oe | [[AltGr]+[W]] | język francuski
+| Œ | OE | [[AltGr]+[Shift]+[W]] | język francuski
+| þ | th | [[AltGr]+[P]] | język islandzki
+| Þ | TH | [[AltGr]+[Shift]+[P]] | język islandzki
+| ð | eth | [[AltGr]+[D]] | język islandzki
+| Ð | Eth | [[AltGr]+[Shift]+[D]] | język islandzki
+| æ | ae | [[AltGr]+[F]] | język duński, norweski, islandzki
+| Æ | AE | [[AltGr]+[Shift]+[F]] | język duński, norweski, islandzki
+| ŋ | eng | [[AltGr]+[G]] |
+| Ŋ | Eng | [[AltGr]+[Shift]+[G]] |
+| ə | szwa | [[AltGr]+[J]] | język azerski
+| Ə | Szwa | [[AltGr]+[Shift]+[J]] | język azerski
 
 Znaki interpunkcyjne
 --------------------
@@ -98,12 +98,13 @@ Znaki interpunkcyjne
 | … | wielokropek | [[AltGr]+[K]]
 | « | lewy cudzysłów kątowy | [[AltGr]+[9]]
 | » | prawy cudzysłów kątowy | [[AltGr]+[0]]
-| ‚ | pojedynczy lewy cudzysłów | [[AltGr]+[V]]
-| ' | pojedynczy prawy cudzysłów | [[AltGr]+[Shift]+[V]]
-| ' | pojedynczy prawy cudzysłów | [[AltGr]+[B]]
-| '' | podwójny prawy cudzysłów | [[AltGr]+[Shift]+[B]]
-| ¡ | wykrzyknik odwrócony | [[AltGr]+[Shift]+[1]]
-| ¿ | znak zapytania odwrócony | [[AltGr]+[Shift]+[2]]
+| ’ | pojedynczy prawy cudzysłów | [[AltGr]+[H]] | poprawny typograficznie apostrof
+| ' | pojedynczy lewy cudzysłów | [[AltGr]+[Shift]+[V]]
+| „ | podwójny lewy dolny cudzysłów | [[AltGr]+[V]] | lewy cudzysłów w języku polskim
+| ” | podwójny prawy cudzysłów | [[AltGr]+[B]] | prawy cudzysłów w języku polskim i angielskim
+| “ | podwójny lewy cudzysłów | [[AltGr]+[Shift]+[B]] | lewy cudzysłów w języku angielskim
+| ¡ | odwrócony wykrzyknik | [[AltGr]+[Shift]+[1]] | język hiszpański
+| ¿ | odwrócony pytajnik | [[AltGr]+[Shift]+[2]] | język hiszpański
 |   | twarda spacja | [[AltGr]+[spacja]]
 
 Symbole matematyczne
@@ -112,9 +113,9 @@ Symbole matematyczne
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
 | ≠ | różne od | [[AltGr]+[1]]
 | ≈ | w przybliżeniu | [[AltGr]+[Shift]+[7]]
-| · | kropka środkowa | [[AltGr]+[Shift]+[8]]
+| · | kropka środkowa | [[AltGr]+[Shift]+[8]] | wykorzystywana czasem jako znak mnożenia
 | ± | plus minus | [[AltGr]+[9]]
-| × | mnożenie | [[AltGr]+[,]]
+| × | mnożenie | [[AltGr]+[,]] | używany też jako symbol iloczynu kartezjańskiego
 | ÷ | dzielenie | [[AltGr]+[.]]
 | ≤ | mniejsze lub równe | [[AltGr]+[Shift]+[,]]
 | ≥ | większe lub równe | [[AltGr]+[Shift]+[.]]
@@ -125,7 +126,7 @@ Symbole logiczne
 ----------------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| ¬ | negacja | [[AltGr]+[`]] | oznaczana też przez [[~]]
+| ¬ | negacja | [[AltGr]+[`]] | oznaczana też przez /~/
 | ∨ | alternatywa | [[AltGr]+[Shift]+[`]]
 | ∧ | koniunkcja | [[AltGr]+[Shift]+[6]]
 
@@ -134,10 +135,10 @@ Strzałki
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
 | ← | strzałka w lewo | [[AltGr]+[Y]]
-| → | strzałka w prawo | [[AltGr]+[I]]
+| → | strzałka w prawo | [[AltGr]+[I]] | również symbol implikacji
 | ↑ | strzałka w górę | [[AltGr]+[Shift]+[U]]
 | ↓ | strzałka w dół | [[AltGr]+[U]]
-| ↔ | strzałka w lewo i prawo | [[AltGr]+[Shift]+[I]]
+| ↔ | strzałka w lewo i prawo | [[AltGr]+[Shift]+[I]] | również symbol równoważności
 
 Ułamki
 ------
@@ -172,8 +173,8 @@ Inne symbole
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
 | § | paragraf | [[AltGr]+[7]]
-| © | prawo autorskie | [[AltGr]+[R]]
-| ® | zarejestrowany | [[AltGr]+[Shift]+[R]]
+| © | symbol praw autorskich | [[AltGr]+[R]]
+| ® | znak zarejestrowania | [[AltGr]+[Shift]+[R]]
 | ™ | znak towarowy | [[AltGr]+[Shift]+[T]]
 | ‰ | promil | [[AltGr]+[Shift]+[5]]
 | • | punktor | [[AltGr]+[Shift]+[H]]

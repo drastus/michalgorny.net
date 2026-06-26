@@ -1,10 +1,24 @@
+:root {
+	--pico-font-size: 1rem;
+	--pico-form-element-spacing-vertical: 0.35rem;
+	--pico-form-element-spacing-horizontal: 0.75rem;
+}
+
 html,
 body {
 	overflow-x: hidden;
 }
 
 body {
-	padding-top: 120px;
+	padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin-top: calc(1.5 * var(--pico-typography-spacing-vertical));
+}
+
+p {
+	text-align: justify;
 }
 
 .page-content-inner {
@@ -12,6 +26,7 @@ body {
 	margin: 0 auto;
 	padding-left: 1rem;
 	padding-right: 1rem;
+	box-sizing: border-box;
 }
 
 @media (min-width: 768px) {

@@ -96,7 +96,7 @@ window.addEventListener('scroll', () => {
 
 // Listen for system theme changes
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
-	if (html.getAttribute('data-theme') === 'auto') {
+	if (localStorage.getItem('theme') !== 'light' && localStorage.getItem('theme') !== 'dark') {
 		prefersDark = e.matches;
 		updateThemeIcon('auto');
 	}
