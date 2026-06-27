@@ -93,68 +93,68 @@ Znaki interpunkcyjne
 --------------------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| – | półpauza | [[AltGr]+[-]]
-| — | pauza | [[AltGr]+[Shift]+[-]]
-| … | wielokropek | [[AltGr]+[K]]
-| « | lewy cudzysłów kątowy | [[AltGr]+[9]]
-| » | prawy cudzysłów kątowy | [[AltGr]+[0]]
+| – | półpauza | [[AltGr]+[-]] |
+| — | pauza | [[AltGr]+[Shift]+[-]] |
+| … | wielokropek | [[AltGr]+[K]] |
+| « | lewy cudzysłów kątowy | [[AltGr]+[9]] |
+| » | prawy cudzysłów kątowy | [[AltGr]+[0]] |
 | ’ | pojedynczy prawy cudzysłów | [[AltGr]+[H]] | poprawny typograficznie apostrof
-| ' | pojedynczy lewy cudzysłów | [[AltGr]+[Shift]+[V]]
+| ' | pojedynczy lewy cudzysłów | [[AltGr]+[Shift]+[V]] |
 | „ | podwójny lewy dolny cudzysłów | [[AltGr]+[V]] | lewy cudzysłów w języku polskim
 | ” | podwójny prawy cudzysłów | [[AltGr]+[B]] | prawy cudzysłów w języku polskim i angielskim
 | “ | podwójny lewy cudzysłów | [[AltGr]+[Shift]+[B]] | lewy cudzysłów w języku angielskim
 | ¡ | odwrócony wykrzyknik | [[AltGr]+[Shift]+[1]] | język hiszpański
 | ¿ | odwrócony pytajnik | [[AltGr]+[Shift]+[2]] | język hiszpański
-|   | twarda spacja | [[AltGr]+[spacja]]
+|   | twarda spacja | [[AltGr]+[      ]] | spacja niełamiąca wiersza
 
 Symbole matematyczne
 --------------------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| ≠ | różne od | [[AltGr]+[1]]
-| ≈ | w przybliżeniu | [[AltGr]+[Shift]+[7]]
+| ≠ | różne od | [[AltGr]+[1]] |
+| ≈ | w przybliżeniu | [[AltGr]+[Shift]+[7]] |
 | · | kropka środkowa | [[AltGr]+[Shift]+[8]] | wykorzystywana czasem jako znak mnożenia
-| ± | plus minus | [[AltGr]+[9]]
+| ± | plus minus | [[AltGr]+[9]] |
 | × | mnożenie | [[AltGr]+[,]] | używany też jako symbol iloczynu kartezjańskiego
-| ÷ | dzielenie | [[AltGr]+[.]]
-| ≤ | mniejsze lub równe | [[AltGr]+[Shift]+[,]]
-| ≥ | większe lub równe | [[AltGr]+[Shift]+[.]]
-| ∞ | nieskończoność | [[AltGr]+[M]]
-| π | pi | [[AltGr]+[Q]]
+| ÷ | dzielenie | [[AltGr]+[.]] |
+| ≤ | mniejsze lub równe | [[AltGr]+[Shift]+[,]] |
+| ≥ | większe lub równe | [[AltGr]+[Shift]+[.]] |
+| ∞ | nieskończoność | [[AltGr]+[M]] |
+| π | pi | [[AltGr]+[Q]] |
 
 Symbole logiczne
 ----------------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
 | ¬ | negacja | [[AltGr]+[`]] | oznaczana też przez /~/
-| ∨ | alternatywa | [[AltGr]+[Shift]+[`]]
-| ∧ | koniunkcja | [[AltGr]+[Shift]+[6]]
+| ∨ | alternatywa | [[AltGr]+[Shift]+[`]] |
+| ∧ | koniunkcja | [[AltGr]+[Shift]+[6]] |
 
 Strzałki
 --------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| ← | strzałka w lewo | [[AltGr]+[Y]]
+| ← | strzałka w lewo | [[AltGr]+[Y]] |
 | → | strzałka w prawo | [[AltGr]+[I]] | również symbol implikacji
-| ↑ | strzałka w górę | [[AltGr]+[Shift]+[U]]
-| ↓ | strzałka w dół | [[AltGr]+[U]]
+| ↑ | strzałka w górę | [[AltGr]+[Shift]+[U]] |
+| ↓ | strzałka w dół | [[AltGr]+[U]] |
 | ↔ | strzałka w lewo i prawo | [[AltGr]+[Shift]+[I]] | również symbol równoważności
 
 Ułamki
 ------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| ¼ | jedna czwarta | [[AltGr]+[4]]
-| ½ | jedna druga | [[AltGr]+[6]]
-| ¾ | trzy czwarte | [[AltGr]+[8]]
+| ¼ | jedna czwarta | [[AltGr]+[4]] |
+| ½ | jedna druga | [[AltGr]+[6]] |
+| ¾ | trzy czwarte | [[AltGr]+[8]] |
 
 Jednostki
 ---------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| ² | do kwadratu | [[AltGr]+[2]]
-| ³ | do sześcianu | [[AltGr]+[3]]
-| ° | stopień | [[AltGr]+[Shift]+[0]]
+| ² | do kwadratu | [[AltGr]+[2]] |
+| ³ | do sześcianu | [[AltGr]+[3]] |
+| ° | stopień | [[AltGr]+[Shift]+[0]] |
 | μ | mikro | [[AltGr]+[Shift]+[M]] | przedrostek układu SI
 | Ω | Omega | [[AltGr]+[Shift]+[Q]] | om, jednostka oporu elektrycznego
 
@@ -163,18 +163,18 @@ Symbole walut
 -------------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| € | euro | [[AltGr]+[5]]
-| ¢ | cent | [[AltGr]+[4]]
-| £ | funt | [[AltGr]+[Shift]+[3]]
+| € | euro | [[AltGr]+[5]] |
+| ¢ | cent | [[AltGr]+[4]] |
+| £ | funt | [[AltGr]+[Shift]+[3]] |
 | ¥ | jen | [[AltGr]+[Shift]+[Y]] | używany też jako symbol juana
 
 Inne symbole
 ------------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| § | paragraf | [[AltGr]+[7]]
-| © | symbol praw autorskich | [[AltGr]+[R]]
-| ® | znak zarejestrowania | [[AltGr]+[Shift]+[R]]
-| ™ | znak towarowy | [[AltGr]+[Shift]+[T]]
-| ‰ | promil | [[AltGr]+[Shift]+[5]]
-| • | punktor | [[AltGr]+[Shift]+[H]]
+| § | paragraf | [[AltGr]+[7]] |
+| © | symbol praw autorskich | [[AltGr]+[R]] |
+| ® | znak zarejestrowania | [[AltGr]+[Shift]+[R]] |
+| ™ | znak towarowy | [[AltGr]+[Shift]+[T]] |
+| ‰ | promil | [[AltGr]+[Shift]+[5]] |
+| • | punktor | [[AltGr]+[Shift]+[H]] |
