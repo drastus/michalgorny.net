@@ -24,7 +24,7 @@ title: MichałGórny.net
 				<h1><a href="/" class="top-bar-title">MichałGórny.net</a></h1>
 				<div class="top-bar-nav">
 					<a
-						href="mailto:zrchos@gmail.com"
+						href="mailto:{% if lang == 'pl' %}kontakt@michalgorny.net{% else %}contact@michalgorny.net{% endif %}"
 						aria-label="{% if lang == 'pl' %}Kontakt{% else %}Contact{% endif %}"
 						title="{% if lang == 'pl' %}Kontakt{% else %}Contact{% endif %}"
 					>
