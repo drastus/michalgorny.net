@@ -24,9 +24,9 @@ title: MichałGórny.net
 				<h1><a href="/" class="top-bar-title">MichałGórny.net</a></h1>
 				<div class="top-bar-nav">
 					<a
-						href="mailto:{% if lang == 'pl' %}kontakt@michalgorny.net{% else %}contact@michalgorny.net{% endif %}"
-						aria-label="{% if lang == 'pl' %}Kontakt{% else %}Contact{% endif %}"
-						title="{% if lang == 'pl' %}Kontakt{% else %}Contact{% endif %}"
+						aria-label="{% if lang == 'pl' %}kontakt małpa{% else %}contact at{% endif %} michalgorny&#46;net"
+						title="{% if lang == 'pl' %}kontakt małpa{% else %}contact at{% endif %} michalgorny&#46;net"
+						id="contact-link"
 					>
 						<i data-feather="mail"></i>
 					</a>
@@ -53,6 +53,7 @@ title: MichałGórny.net
 		<script src="/js/feather.min.js"></script>
 		<script>feather.replace();</script>
 		<script src="/scripts/top-bar.js" type="module"></script>
+		<script src="/scripts/contact.js" type="module"></script>
 		<script src="/scripts/notes.js" type="module"></script>
 		{% if scripts %}
 			{% for script in scripts %}

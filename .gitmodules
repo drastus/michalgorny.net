@@ -1,3 +1,6 @@
 [submodule "compose-generator"]
 	path = compose-generator
 	url = https://github.com/drastus/compose-generator.git
+[submodule "w3c-pl"]
+	path = w3c-pl
+	url = git@github.com:drastus/w3c-pl.git
