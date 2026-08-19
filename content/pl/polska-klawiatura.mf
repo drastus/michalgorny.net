@@ -84,9 +84,9 @@ Litery specjalne
 | Ð | Eth | [[AltGr]+[Shift]+[D]] | język islandzki
 | æ | ae | [[AltGr]+[F]] | język duński, norweski, islandzki
 | Æ | AE | [[AltGr]+[Shift]+[F]] | język duński, norweski, islandzki
-| ŋ | eng | [[AltGr]+[G]] |
-| Ŋ | Eng | [[AltGr]+[Shift]+[G]] |
-| ə | szwa | [[AltGr]+[J]] | język azerski
+| ŋ | eng | [[AltGr]+[G]] | języki saamskie i afrykańskie, alfabety fonetyczne
+| Ŋ | Eng | [[AltGr]+[Shift]+[G]] | języki saamskie i afrykańskie
+| ə | szwa | [[AltGr]+[J]] | język azerski, alfabety fonetyczne
 | Ə | Szwa | [[AltGr]+[Shift]+[J]] | język azerski
 
 Znaki interpunkcyjne
@@ -113,7 +113,7 @@ Symbole matematyczne
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
 | ≠ | różne od | [[AltGr]+[1]] |
 | ≈ | w przybliżeniu | [[AltGr]+[Shift]+[7]] |
-| · | kropka środkowa | [[AltGr]+[Shift]+[8]] | wykorzystywana czasem jako znak mnożenia
+| · | kropka środkowa | [[AltGr]+[Shift]+[8]] | wykorzystywana najczęściej jako znak mnożenia
 | ± | plus minus | [[AltGr]+[9]] |
 | × | mnożenie | [[AltGr]+[,]] | używany też jako symbol iloczynu kartezjańskiego
 | ÷ | dzielenie | [[AltGr]+[.]] |
@@ -144,9 +144,9 @@ Ułamki
 ------
 
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
-| ¼ | jedna czwarta | [[AltGr]+[4]] |
-| ½ | jedna druga | [[AltGr]+[6]] |
-| ¾ | trzy czwarte | [[AltGr]+[8]] |
+| ¼ | jedna czwarta | [[AltGr]+[4]] | jeśli używany system renderowania tekstu to obsługuje, zamiast pojedynczych znaków ułamków można używać sekwencji z kreską ułamkową (⁄), osiągalną np. przy pomocy [klawisza Compose](/compose-generator)
+| ½ | jedna druga | [[AltGr]+[6]] |^
+| ¾ | trzy czwarte | [[AltGr]+[8]] |^
 
 Jednostki
 ---------

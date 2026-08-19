@@ -133,6 +133,10 @@ p {
 	overflow-x: auto;
 }
 
+th, td {
+	vertical-align: top;
+}
+
 kbd.mf-keys, kbd.mf-key {
 	background: none;
 	color: var(--pico-color);
