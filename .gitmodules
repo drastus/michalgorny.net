@@ -4,3 +4,6 @@
 [submodule "w3c-pl"]
 	path = w3c-pl
 	url = git@github.com:drastus/w3c-pl.git
+[submodule "sejm-calculator"]
+	path = sejm-calculator
+	url = git@github.com:drastus/sejm-calculator.git

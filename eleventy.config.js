@@ -32,6 +32,7 @@ export default function(eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({'node_modules/feather-icons/dist/feather.min.js': 'js/feather.min.js'});
 	eleventyConfig.addPassthroughCopy({'compose-generator/dist': 'compose-app'});
 	eleventyConfig.addPassthroughCopy({'w3c-pl': 'w3c-pl'});
+	eleventyConfig.addPassthroughCopy({'sejm-calculator/dist-embedded': 'mandaty'});
 };
 
 export const config = {

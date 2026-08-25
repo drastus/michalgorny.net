@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "prebuild": "cd compose-generator; npm ci; npm run build:embedded; cd ..",
+    "prebuild": "cd compose-generator; npm ci; npm run build:embedded; cd ..; cd sejm-calculator; npm ci; npm run build:embedded; cd ..",
     "build": "npx @11ty/eleventy",
     "start": "npx @11ty/eleventy --serve --quiet",
     "test": "echo \"Error: no test specified\" && exit 1"

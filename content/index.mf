@@ -6,3 +6,5 @@ title: Main Page
 [Compose Generator](./compose-generator)
 
 [Polska klawiatura w systemie Linux](./pl/polska-klawiatura)
+
+// [Kalkulator mandatów w wyborach do Sejmu](./mandaty)
