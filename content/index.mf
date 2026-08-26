@@ -7,4 +7,4 @@ title: Main Page
 
 [Polska klawiatura w systemie Linux](./pl/polska-klawiatura)
 
-// [Kalkulator mandatów w wyborach do Sejmu](./mandaty)
+[Kalkulator mandatów w wyborach do Sejmu](./mandaty)
