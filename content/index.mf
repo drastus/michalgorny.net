@@ -3,7 +3,7 @@ layout: layout.njk
 title: Main Page
 ---
 
-[Compose Generator](./compose-generator)
+[Compose Key Sequence Generator](./compose-generator)
 
 [Polska klawiatura w systemie Linux](./pl/polska-klawiatura)
 
