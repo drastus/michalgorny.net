@@ -137,6 +137,10 @@ th, td {
 	vertical-align: top;
 }
 
+kbd {
+	padding-bottom: 0.2rem;
+}
+
 kbd.mf-keys, kbd.mf-key {
 	background: none;
 	color: var(--pico-color);
