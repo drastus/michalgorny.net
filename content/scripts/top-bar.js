@@ -78,9 +78,11 @@ function updateTopBar() {
 	if (scrollY > lastScrollY && scrollY > 100) {
 		// Scrolling down
 		topBar.classList.add('hidden');
+		html.classList.add('top-bar-hidden');
 	} else {
 		// Scrolling up
 		topBar.classList.remove('hidden');
+		html.classList.remove('top-bar-hidden');
 	}
 
 	lastScrollY = scrollY;

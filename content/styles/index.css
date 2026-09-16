@@ -4,8 +4,7 @@
 	--pico-form-element-spacing-horizontal: 0.75rem;
 }
 
-html,
-body {
+html {
 	overflow-x: hidden;
 }
 
@@ -127,10 +126,6 @@ p {
 .theme-toggle:hover {
 	background-color: var(--pico-primary-hover);
 	color: var(--pico-primary-inverse);
-}
-
-.page-content {
-	overflow-x: auto;
 }
 
 th, td {
