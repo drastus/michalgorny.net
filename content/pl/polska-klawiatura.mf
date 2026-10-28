@@ -113,7 +113,7 @@ Symbole matematyczne
 ! Znak ! Nazwa ! Sekwencja ! Uwagi
 | ≠ | różne od | [[AltGr]+[1]] |
 | ≈ | w przybliżeniu | [[AltGr]+[Shift]+[7]] |
-| · | kropka środkowa | [[AltGr]+[Shift]+[8]] | wykorzystywana najczęściej jako znak mnożenia
+| ⋅ | operator kropka | [[AltGr]+[Shift]+[8]] | wykorzystywany jako znak mnożenia
 | ± | plus minus | [[AltGr]+[9]] |
 | × | mnożenie | [[AltGr]+[,]] | używany też jako symbol iloczynu kartezjańskiego
 | ÷ | dzielenie | [[AltGr]+[.]] |
@@ -155,9 +155,8 @@ Jednostki
 | ² | do kwadratu | [[AltGr]+[2]] |
 | ³ | do sześcianu | [[AltGr]+[3]] |
 | ° | stopień | [[AltGr]+[Shift]+[0]] |
-| μ | mikro | [[AltGr]+[Shift]+[M]] | przedrostek układu SI
-| Ω | Omega | [[AltGr]+[Shift]+[Q]] | om, jednostka oporu elektrycznego
-
+| μ | mała grecka litera mi | [[AltGr]+[Shift]+[M]] | mikro, przedrostek układu SI
+| Ω | wielka grecka litera omega | [[AltGr]+[Shift]+[Q]] | om, jednostka oporu elektrycznego
 
 Symbole walut
 -------------
